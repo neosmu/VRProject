@@ -849,11 +849,11 @@ MonoBehaviour:
   m_Name: MetaQuestTouchProControllerProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Touch Pro Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestpro
+  openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-3549524000066614409
@@ -971,11 +971,11 @@ MonoBehaviour:
   m_Name: OculusQuestFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Oculus Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.oculusquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
   priority: 0
   required: 0
   targetQuest: 1
@@ -1015,21 +1015,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: -9144306276379453969}
-  - {fileID: -4448290568980541416}
-  - {fileID: 8785573897963165970}
-  - {fileID: 6829250667912537528}
-  - {fileID: 7983502532906952439}
+  - {fileID: -4976097723902384290}
+  - {fileID: 2258968339170048723}
+  - {fileID: -5414798339797948177}
+  - {fileID: 246361073893943974}
   - {fileID: -6608091134962179111}
   - {fileID: -1038407885277335875}
   - {fileID: 1767770955526713986}
-  - {fileID: -5246566293696678102}
-  - {fileID: -2820093100700799076}
+  - {fileID: -3611469698738578748}
+  - {fileID: -3254934642855720215}
   - {fileID: 5740598152562748609}
   - {fileID: 149776127143953101}
-  - {fileID: -8004410590134701362}
+  - {fileID: -6394989887831978124}
   - {fileID: -9158141494782789792}
-  - {fileID: 415766294572265868}
-  - {fileID: 3174404435730659149}
+  - {fileID: -1149046481541137754}
+  - {fileID: 1058542120946951970}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1299,11 +1299,11 @@ MonoBehaviour:
   m_Name: HandInteractionProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Hand Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handinteraction
+  openxrExtensionStrings: XR_EXT_hand_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &319844606956757469
@@ -1454,11 +1454,11 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &1231283358337177824
@@ -1514,7 +1514,7 @@ MonoBehaviour:
   m_Name: iPhone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -5401154580625596760}
+  - {fileID: 3082602281603183185}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1637,11 +1637,11 @@ MonoBehaviour:
   m_Name: EyeGazeInteraction Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Eye Gaze Interaction Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.eyetracking
+  openxrExtensionStrings: XR_EXT_eye_gaze_interaction
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &3082602281603183185
@@ -1998,11 +1998,11 @@ MonoBehaviour:
   m_Name: ConformanceAutomationFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Conformance Automation
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.conformance
+  openxrExtensionStrings: XR_EXT_conformance_automation
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &6048670961255149523
@@ -2082,20 +2082,20 @@ MonoBehaviour:
   - {fileID: -6247147140316371197}
   - {fileID: 4094294870227180489}
   - {fileID: -7444992837986638089}
-  - {fileID: -5683196774144422983}
+  - {fileID: -3981404503525783595}
   - {fileID: -6622939027115689755}
   - {fileID: -4019401154841588377}
   - {fileID: 8073412126588767994}
   - {fileID: 3855514833360947915}
-  - {fileID: -7948778912491811785}
+  - {fileID: 819157591401125644}
   - {fileID: -4013626613576866615}
-  - {fileID: -8954288751192808930}
+  - {fileID: 6079710210595862421}
   - {fileID: 7744876376874210693}
   - {fileID: 2098151755374656759}
-  - {fileID: -6781187636669198497}
-  - {fileID: -5144279899839618974}
-  - {fileID: -2487948992347816347}
-  - {fileID: -6077146776734068056}
+  - {fileID: 8901176720900194170}
+  - {fileID: -1792739712454187806}
+  - {fileID: 3200431581998075000}
+  - {fileID: -3172238089663518030}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -2177,11 +2177,11 @@ MonoBehaviour:
   m_Name: MockRuntime Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Mock Runtime
+  version: 0.0.2
+  featureIdInternal: com.unity.openxr.feature.mockruntime
+  openxrExtensionStrings: XR_UNITY_null_gfx XR_UNITY_android_present
+  company: Unity
   priority: 0
   required: 0
   ignoreValidationErrors: 0
@@ -2198,11 +2198,11 @@ MonoBehaviour:
   m_Name: MetaQuestFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: Meta Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.metaquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
   priority: 0
   required: 0
   targetDevices:
