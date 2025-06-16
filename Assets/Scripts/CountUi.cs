@@ -9,6 +9,7 @@ public class CountUi : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI hitCountText;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI bulletText;
 
     private int hitCount = 0;
     private int score = 0;
@@ -28,5 +29,10 @@ public class CountUi : MonoBehaviour
     {
         score = newScore;
         scoreText.text = $"{score}";
+    }
+    public void SetBullets(int current, int max)
+    {
+        Debug.Log($"ÃÑ¾Ë Ç¥½Ã: {current}/{max}");
+        bulletText.text = $"{current}/{max}";
     }
 }
