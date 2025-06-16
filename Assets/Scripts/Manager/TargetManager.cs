@@ -5,29 +5,35 @@ using UnityEngine;
 
 public class TargetManager : MonoBehaviour
 {
-    [SerializeField] private GameObject target1;
-    [SerializeField] private GameObject target2;
-    [SerializeField] private GameObject target3;
-
-    private GameObject[] targets;
+    [SerializeField] private GameObject[] targets;
+    [SerializeField] private CountUi countUi;
     private int currentIndex = 0;
     private int spawnCount = 0;
     private int maxCount = 20;
 
     void Start()
     {
-        targets = new GameObject[] {target1, target2, target3};
+       
         StartCoroutine(TargetRoutine());
     }
     IEnumerator TargetRoutine()
     {
-        while (true)
+        while (spawnCount < maxCount)
         {
-            yield return new WaitForSeconds(3f);
+            for (int i = 3; i > 0; i--)
+            {
+                countUi.SetTime(i);
+                yield return new WaitForSeconds(1f);
+            }
 
             ShowTarget(currentIndex);
 
-            yield return new WaitForSeconds(10f);
+            
+            for (int i = 10; i > 0; i--)
+            {
+                countUi.SetTime(i);
+                yield return new WaitForSeconds(1f);
+            }
 
             HideTargets();
 
@@ -37,9 +43,11 @@ public class TargetManager : MonoBehaviour
 
             spawnCount++;
         }
-    }
 
-    void ShowTarget(int index)
+        countUi.SetTime(0);
+}
+
+void ShowTarget(int index)
     {
         for (int i = 0; i < targets.Length; i++)
         {

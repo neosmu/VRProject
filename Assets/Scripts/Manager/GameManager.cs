@@ -5,15 +5,12 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : Singleton<GameManager>
 {
-    public int Score { get; set; }
+    public ScoreManager Score { get; private set; }
     private void Awake() => Init();
 
     private void Init()
     {
         base.SingletonInit();
-    }
-    public void AddScore(int score)
-    {
-        Score += score;
+        Score = GetComponentInChildren<ScoreManager>();
     }
 }

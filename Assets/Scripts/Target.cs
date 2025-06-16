@@ -10,7 +10,8 @@ public class Target : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            GameManager.Instance.AddScore(scoreValue);
+            GameManager.Instance.Score.AddScore(scoreValue);
+            GameManager.Instance.Score.AddHit();
             gameObject.SetActive(false);
         }
     }
