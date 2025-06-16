@@ -25,10 +25,17 @@ public class TargetManager : MonoBehaviour
                 countUi.SetTime(i);
                 yield return new WaitForSeconds(1f);
             }
+            if (spawnCount < 3)
+            {
+                currentIndex = spawnCount;
+            }
+            else
+            {
+                currentIndex = Random.Range(0, targets.Length);
+            }
 
             ShowTarget(currentIndex);
 
-            
             for (int i = 10; i > 0; i--)
             {
                 countUi.SetTime(i);
@@ -43,7 +50,6 @@ public class TargetManager : MonoBehaviour
 
             spawnCount++;
         }
-
         countUi.SetTime(0);
 }
 
