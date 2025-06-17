@@ -18,11 +18,11 @@ public class Result : UIManager
         hitCountText.text = $"{hitCount}/20";
     }
 
-    //public void OnClickRetry()
-    //{
-    //    PlayClickSound();
-    //    SceneManager.LoadScene("Shooting Scene");
-    //}
+    public void onClickRetry()
+    {
+        PlayClickSound();
+        SceneManager.LoadScene("Shooting scene");
+    }
     //public void OnClickTitle()
     //{
     //    PlayClickSound();

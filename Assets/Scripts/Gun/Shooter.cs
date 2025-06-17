@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shooter : MonoBehaviour
 {
@@ -36,6 +37,16 @@ public class Shooter : MonoBehaviour
         if (audio != null && fireSound != null)
         {
             audio.PlaySFX(fireSound);
+        }
+        if (bulletCount <= 0)
+        {
+            StartCoroutine(LoadResultAfterDelay());
+        }
+
+        IEnumerator LoadResultAfterDelay()
+        {
+            yield return new WaitForSeconds(5f);
+            SceneManager.LoadScene("Result Scene");
         }
     }
 }
