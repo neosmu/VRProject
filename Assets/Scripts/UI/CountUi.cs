@@ -32,7 +32,6 @@ public class CountUi : MonoBehaviour
     }
     public void SetBullets(int current, int max)
     {
-        Debug.Log($"ÃÑ¾Ë Ç¥½Ã: {current}/{max}");
         bulletText.text = $"{current}/{max}";
     }
 }

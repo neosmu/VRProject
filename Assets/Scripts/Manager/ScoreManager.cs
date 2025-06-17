@@ -11,13 +11,15 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int value)
     {
         Score.Value += value;
-        countUi.SetScore(Score.Value);
+        if (countUi != null)
+            countUi.SetScore(Score.Value);
     }
 
     public void AddHit()
     {
         HitCount.Value++;
-        countUi.AddHit();
+        if (countUi != null)
+            countUi.AddHit();
     }
     public void ResetScore()
     {

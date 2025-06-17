@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class TargetManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] targets;
@@ -51,7 +51,8 @@ public class TargetManager : MonoBehaviour
             spawnCount++;
         }
         countUi.SetTime(0);
-}
+        SceneManager.LoadScene("Result Scene");
+    }
 
 void ShowTarget(int index)
     {
