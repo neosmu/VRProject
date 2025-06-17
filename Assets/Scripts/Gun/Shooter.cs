@@ -9,6 +9,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private BulletPool bulletPool;
     [SerializeField] private int bulletCount;
     [SerializeField] private int maxbulletCount;
+    [SerializeField] private AudioClip fireSound;
 
     public void Fire()
     {
@@ -30,6 +31,11 @@ public class Shooter : MonoBehaviour
         if (GameManager.Instance.countUi != null)
         {
             GameManager.Instance.countUi.SetBullets(bulletCount, maxbulletCount);
+        }
+        AudioManager audio = FindObjectOfType<AudioManager>();
+        if (audio != null && fireSound != null)
+        {
+            audio.PlaySFX(fireSound);
         }
     }
 }

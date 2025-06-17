@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 10
+  hitSound: {fileID: 8300000, guid: e8210ab1fe6784e7eb15956b135716c9, type: 3}
 --- !u!65 &292816230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -627,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1fb27c39e0e3d84b8001f2dda480ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3130262252451523683, guid: ec0581e8aa214204b9f01884e77f846c, type: 3}
+  bulletPrefab: {fileID: 7953388012101052411, guid: 674adf642abf5614aae2995443c8250f, type: 3}
   poolSize: 10
 --- !u!1 &531113889 stripped
 GameObject:
@@ -1608,6 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 50
+  hitSound: {fileID: 8300000, guid: e8210ab1fe6784e7eb15956b135716c9, type: 3}
 --- !u!65 &1348278245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1809,6 +1811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 30
+  hitSound: {fileID: 8300000, guid: e8210ab1fe6784e7eb15956b135716c9, type: 3}
 --- !u!65 &1728764946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2075,6 +2078,7 @@ MonoBehaviour:
   bulletPool: {fileID: 494672352}
   bulletCount: 25
   maxbulletCount: 25
+  fireSound: {fileID: 8300000, guid: 4d6281aa604094f04839cffa502096c0, type: 3}
 --- !u!1001 &1852996063
 PrefabInstance:
   m_ObjectHideFlags: 0
